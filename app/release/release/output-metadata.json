@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "ir.cenlearn.alonegram",
+  "variantName": "processReleaseResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 9,
+      "versionName": "alonegram-v2",
+      "outputFile": "app-release.apk"
+    }
+  ]
+}

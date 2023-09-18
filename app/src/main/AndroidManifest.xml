@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ir.cenlearn.alonegram">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".Others.calligraphy"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_logo_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+
+
+        <receiver
+            android:name=".BroadCasts.BroadCastInternt"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activities.MusicActivity" />
+        <activity android:name=".Activities.PrivacyPolicyActivity" />
+        <activity android:name=".Activities.SplashScreenActivity" />
+        <activity android:name=".Activities.ShowViewsActivity" />
+
+        <meta-data
+            android:name="com.pushpole.sdk.token"
+            android:value="PUSHPOLE_976071017883" />
+
+        <activity
+            android:name=".Activities.CommentActivity"
+            android:windowSoftInputMode="adjustResize"
+            />
+        <activity
+            android:name=".Activities.NotifActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ShowResultClickPost"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Activities.SearchActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.AddPostsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".Activities.ShowResultSearch" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:configChanges="uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ExploreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CreateAccount"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            />
+
+    </application>
+
+</manifest>

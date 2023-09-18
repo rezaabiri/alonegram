@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Activities.CommentActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        tools:ignore="MissingConstraints"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        android:id="@+id/actionbar">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/arrow_left"
+            android:layout_marginLeft="15dp"
+            android:onClick="back_arrow_views"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:text="بازدید ها"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/loading_views"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        tools:ignore="MissingConstraints"
+        android:padding="5dp"
+        android:background="@drawable/border_loading"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerview_views"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerview_views"
+        app:layout_constraintStart_toStartOf="@+id/recyclerview_views"
+        app:layout_constraintTop_toTopOf="@+id/recyclerview_views"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_views"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:stackFromEnd="true"
+        app:barrierDirection="top"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Activities.CommentActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        tools:ignore="MissingConstraints"
+        android:elevation="1dp"
+        android:background="#ffffff"
+        android:id="@+id/actionbar">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/arrow_left"
+            android:layout_marginLeft="15dp"
+            android:onClick="backarrow"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:text="نظرات"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/loading_comments"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        tools:ignore="MissingConstraints"
+        android:padding="5dp"
+        android:background="@drawable/border_loading"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerview_comment"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerview_comment"
+        app:layout_constraintStart_toStartOf="@+id/recyclerview_comment"
+        app:layout_constraintTop_toTopOf="@+id/recyclerview_comment"/>
+
+    <LinearLayout
+        android:id="@+id/nocommentyet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerview_comment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionbar"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_far_comment_alt"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="هیچ نظری ثبت نشده است"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal|center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:id="@+id/seperator"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#CDCDCD"
+            android:visibility="visible"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <FrameLayout
+                android:id="@+id/Frame_replay"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_edittext"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_answer"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/target_replay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="left"
+                        android:textColor="#2962FF"
+                        android:textSize="11dp"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/cancel_replay"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_cancel_replay"
+                        tools:ignore="MissingConstraints" />
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/replay_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="30dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/sendcomment"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/hintcomment"
+                android:inputType="textMultiLine"
+                android:maxHeight="120dp"
+                android:minHeight="38dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="2dp"
+                android:textSize="13dp" />
+
+            <ImageView
+                android:id="@+id/imgsend"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:paddingRight="5dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/send" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

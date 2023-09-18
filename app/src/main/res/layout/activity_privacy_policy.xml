@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.PrivacyPolicyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="حریم خصوصی و توافق نامه کاربر"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="MissingConstraints" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCBCBC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="قوانین اِلانگرام"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="12dp"
+                android:layout_gravity="right"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="#606060"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:justificationMode="inter_word"
+                android:text="
+اینجا یک سری قوانین است که باید در استفاده از این نرم افزار رعایت شود
+\n
+کاربر مجاز نیست محتوای نامناسب را اشتراک گذاری کند
+\n
+محتوای مثبت 18 سال مجاز نیست
+\n
+محتوایی که شامل موارد خشونت آمیز باشد مجاز نیست
+\n
+محتوایی که باعث اختلاف بین ادیان مخلتف باشد مجاز نیست
+\n
+محتوای سیاسی و ضد انقلابی مجاز نیست
+\n
+بدین صورت هرگونه محتوایی که با قوانین ایران سازگاری نداشته باشد برخورد خواهد شد
+
+"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اطلاعتی که الانگرام جمع آوری میکند"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="12dp"
+                android:layout_gravity="right"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:lineSpacingExtra="3dp"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:textColor="#606060"
+                android:justificationMode="inter_word"
+                android:text="اطلاعاتی که اِلانگرام از شما جمع آوری میکند شامل همان اطلاعاتی میباشد که نگام ثبت نام داخل برنامه ثبت میکنید و اطلاعات اضافی دیگری جمع آوری نمیشود"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دسترسی به حافظه ذخیره سازی"
+                android:textSize="14dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="right"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:lineSpacingExtra="3dp"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:textColor="#606060"
+                android:justificationMode="inter_word"
+                android:text="دسترسی که از حافظه ذخیره سازی دستگاه شما گرفته میشود به منظور ارسال پست و دانلود پست ها میباشد درغیر اینصورت اگر دسترسی داده نشود قادر به ارسال پست و دانلود پست ها نخواهید بود"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دسترسی به اینترنت"
+                android:textSize="14dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="right"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:lineSpacingExtra="3dp"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:textColor="#606060"
+                android:justificationMode="inter_word"
+                android:text="دسترسی به اینترنت برای کارکرد صحیح برنامه نیاز است، درغیر اینصورت برنامه کار نخواهد کرد"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="گزارش تخلفات"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="right"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:lineSpacingExtra="3dp"
+                android:gravity="right"
+                android:textColor="#606060"
+                android:textSize="12dp"
+                android:justificationMode="inter_word"
+                android:text="درصورتی که کاربری یا کاربرانی محتوای شما را نامناسب تشخیص دهند و گزارش دهند، محتوای شما و حساب شما برسی خواهد و در صورت صحیح بودن گزارش پیگیری خواهد شد و حسابتان مسدود خواهد شد"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ایمن سازی اطلاعات ثبت شده"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="right"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:lineSpacingExtra="3dp"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:textColor="#606060"
+                android:justificationMode="inter_word"
+                android:text="اطلاعاتی که شما هنگام ثبت نام در برنامه وارد میکنید به صورت ایمن از آنها محافظت خواهد شد، همچنین شماره دریافتی هنگام ویرایش حساب، اختیاری میباشد، دریافت شماره موبایل به منظور بازیابی حساب درصورت فراموشی رمز عبور و ناتوانی در بازیابی رمز خواهد بود در غیر اینصورت اگر شماره موبایل ثبت نشده باشد حتما ایمیلی را ثبت کنید که هنگام فراموشی ایمیل را به خاطر بیاورید"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بازیابی رمز عبور"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="right"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:lineSpacingExtra="3dp"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:textColor="#606060"
+                android:justificationMode="inter_word"
+                android:text="رمز عبور شما رمزنگاری خواهد شد، درصورت فراموشی میتوانید مراحل بازیابی آن را طی کنید و رمز عبور جدید را ثبت کنید"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ثبت اطلاعات صحیح"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="right"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:lineSpacingExtra="3dp"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:textColor="#606060"
+                android:justificationMode="inter_word"
+                android:text="برای اطمینان خاطر از امن بودن حساب، هنگام ساخت حساب کاربری، سوال امنیتی و رمزعبور خود را با دقت انتخاب کنید و پاسخ آن را سعی کنید دشوار انتخاب کنید که به راحتی قابل حدس زدن نباشد"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

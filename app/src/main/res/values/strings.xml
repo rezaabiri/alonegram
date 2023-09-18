@@ -1,0 +1,68 @@
+<resources>
+
+    <string name="app_name">Alonegram</string>
+
+    <string name="postModels">پست ها</string>
+    <string name="home">صفحه اصلی</string>
+    <string name="search_users">جستجوی کاربران</string>
+    <string name="add_post">افزودن پست</string>
+    <string name="notification">اعلان ها</string>
+    <string name="edit_profile">ویرایش پروفایل</string>
+    <string name="share">اشتراک گذاری</string>
+    <string name="rating">امتیاز بدید</string>
+    <string name="rate">امتیاز</string>
+    <string name="email">ارتباط با ما</string>
+    <string name="logout">خروج از حساب کاربری</string>
+    <string name="delete_account">حذف حساب کاربری</string>
+    <string name="add_post_click">برای اضافه کردن تصویر کلیک کنید</string>
+    <string name="video_name">عنوان پست :</string>
+    <string name="id_aparat">آیدی ویدیو آپارات :</string>
+    <string name="video_summary">توضیحات : </string>
+    <string name="send_post">ارسال پست</string>
+    <string name="guide">راهنمایی</string>
+    <string name="username">نام کاربری</string>
+    <string name="Do_you_have_an_account">حساب کاربری دارید؟</string>
+    <string name="Do_not_have_an_account">حساب کاربری ندارید؟</string>
+    <string name="create_account">ساخت حساب کاربری</string>
+    <string name="login_account">ورود به حساب کاربری</string>
+    <string name="watch_the_video">تماشای ویدیو :</string>
+    <string name="search_users_ac">کاربران را جستجو کنید ...</string>
+    <string name="user_not_found">این کاربر وجود ندارد</string>
+    <string name="btn_submit">اعمال تغییرات</string>
+    <string name="elzami">الزامی</string>
+    <string name="ekhtiari">اختیاری</string>
+    <string name="phone">شماره تلفن</string>
+    <string name="fullname">نام و نام خانوادگی</string>
+    <string name="firstpost">هیچ پستی وجود ندارد</string>
+    <string name="ysedelete">بله پاک شود</string>
+    <string name="editpost">ویرایش پست</string>
+    <string name="yesleaving">بله خارج میشوم</string>
+    <string name="subject_report">موضوع گزارش</string>
+    <string name="desc_violation">شرح تخلف</string>
+    <string name="send_gozaresh">ارسال گزارش</string>
+    <string name="newmsg">پیام جدید</string>
+    <string name="permission">برای انتخاب فایل دسترسی ضروری است</string>
+    <string name="allow">دسترسی دادن</string>
+    <string name="servererror">خطا در ارتباط با سرور</string>
+    <string name="wrongvideoid">آیدی ویدیو اشتباه است</string>
+    <string name="correctinfo">اطلاعات را درست وارد کنید</string>
+    <string name="wrongusername">نام کاربری کوتاه است</string>
+    <string name="wrongpassword">رمز عبور کوتاه است</string>
+    <string name="wronemail">ایمیل صحیح نیست</string>
+    <string name="userexist">این کاربر از قبل وجود دارد</string>
+    <string name="reportsubmit">گزارش ارسال شد</string>
+    <string name="reportnotsend">گزارش ارسال نشد</string>
+    <string name="wrondelacc">مشکل رخ داده است، لطفا بعدا تلاش کنید</string>
+    <string name="sucdelacc">حساب کاربری شما حذف شد</string>
+    <string name="edited">ویرایش شد</string>
+    <string name="updateprofile">با موفقیت بروزرسانی شد</string>
+    <string name="hintcomment">نظر جدید ...</string>
+    <string name="google_service">سرویس های گوگل نصب نیست</string>
+    <string name="post_not_exists">این پست وجود ندارد</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mail">ایمیل</string>
+
+</resources>

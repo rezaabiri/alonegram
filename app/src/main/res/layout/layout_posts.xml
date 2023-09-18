@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Linear_posts"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_main"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:minHeight="207dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:layout_gravity="center"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        tools:ignore="MissingConstraints"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_img_user"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                app:cardCornerRadius="0dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardElevation="1dp"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/video_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center" />
+
+
+                <ImageView
+                    android:id="@+id/type_music"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:elevation="10dp"
+                    android:src="@drawable/ic_type_music"
+                    />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/video_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textColor="#333333"
+                    android:maxWidth="75dp"
+                    android:textSize="11.5dp"
+                    android:text="onvan"
+                    android:lines="1"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="11.5dp"
+                    android:text="عنوان : "
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/frame_border"
+        android:layout_width="158dp"
+        android:layout_height="216dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#2DABBC"
+        app:cardCornerRadius="16dp"
+        android:visibility="gone"
+        app:cardUseCompatPadding="true"
+        >
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

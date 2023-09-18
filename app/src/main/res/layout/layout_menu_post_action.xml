@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.cenlearn.alonegram.fragments.DeleteAccountFragment"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            >
+            <TextView
+                android:id="@+id/btn_edit_post"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="ویرایش پست"
+                android:textAllCaps="false"
+                android:textColor="#333333"
+                android:layout_marginBottom="5dp"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#D3D3D3"
+                app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/btn_send_report"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="گزارش مشکل"
+                android:textAllCaps="false"
+                android:textColor="#333333"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#D3D3D3"
+                app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/rate_to_account"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="امتیاز به کاربر"
+                android:textAllCaps="false"
+                android:textColor="#333333"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#D3D3D3"
+                app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/btn_download_image"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="دانلود تصویر"
+                android:textAllCaps="false"
+                android:textColor="#333333"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="#D3D3D3"
+                app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/btn_delete_post"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:text="پاک کردن پست"
+                android:textColor="#DF2D2D"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
